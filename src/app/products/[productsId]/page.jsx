@@ -1,4 +1,17 @@
+
+
 import Link from "next/link";
+
+export function generateMetadata({params}){
+  return {
+    title: `Product ${params.productsId}`,
+    description: "Im the best",
+  }
+}
+
+// export const metadata = {
+//   title: "Product Info",
+// }
 
 const Product = ({params: {productsId}}) => {
     const reviews = [
